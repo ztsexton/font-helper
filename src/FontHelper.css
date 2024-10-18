@@ -1,0 +1,56 @@
+/* FontHelper.css */
+
+.font-helper-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.text-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.text-input:focus {
+  outline: none;
+  border-color: #007acc;
+  box-shadow: 0 0 5px rgba(0, 122, 204, 0.5);
+}
+
+.output-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.output-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.output-box {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: "Consolas", monospace;
+  background-color: #fff;
+  min-height: 50px;
+  font-size: 16px;
+  color: #333;
+}
