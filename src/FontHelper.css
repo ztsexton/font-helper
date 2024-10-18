@@ -6,7 +6,7 @@
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #f9f9f9;
+  background-image: url("/murica.webp");
 }
 
 .input-container {
@@ -18,7 +18,6 @@
 .input-label {
   font-weight: bold;
   margin-bottom: 5px;
-  color: #333;
 }
 
 .text-input {
@@ -43,10 +42,6 @@
 .output-label {
   font-weight: bold;
   margin-bottom: 5px;
-}
-
-.component-description {
-  color: #333;
 }
 
 .output-box {
