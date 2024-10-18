@@ -18,6 +18,7 @@
 .input-label {
   font-weight: bold;
   margin-bottom: 5px;
+  color: #333;
 }
 
 .text-input {
@@ -42,6 +43,10 @@
 .output-label {
   font-weight: bold;
   margin-bottom: 5px;
+}
+
+.component-description {
+  color: #333;
 }
 
 .output-box {

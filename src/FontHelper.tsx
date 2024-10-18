@@ -17,9 +17,12 @@ function FontHelper() {
           className="text-input"
         />
       </div>
-
+      <p className="component-description">
+        This site is made to easily tell the difference between capital i,
+        lowercase L, and the number one{" "}
+      </p>
       <div className="output-container">
-        <span className="output-label">Output:</span>
+        <span className="output-label component-description">Output:</span>
         <div className="output-box">{input}</div>
       </div>
     </div>

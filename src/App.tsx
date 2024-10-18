@@ -13,6 +13,7 @@ function App() {
         <div className="content">
           <img id="carlos-head" src={carlosHead} alt="Carlos head" />
           <h1>Font Helper</h1>
+
           <div className="card">
             <FontHelper />
           </div>
