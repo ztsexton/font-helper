@@ -1,25 +1,26 @@
 import "./App.css";
 import FontHelper from "./FontHelper";
-import carlosHead from "/carlos-head.jpg";
 
 function App() {
   return (
-    <>
-      <div className="app-container">
-        {/* Fixed sidebar images */}
-        <div className="sidebar left"></div>
-        <div className="sidebar right"></div>
-
-        <div className="content">
-          <img id="carlos-head" src={carlosHead} alt="Carlos head" />
+    <div className="app-container">
+      <div className="content">
+        <header>
           <h1>Font Helper</h1>
+          <p className="subtitle">Easily distinguish between I, l, and 1</p>
+        </header>
 
-          <div className="card">
-            <FontHelper />
-          </div>
+        <div className="card">
+          <FontHelper />
         </div>
+
+        <footer>
+          <a href="https://github.com/ztsexton/font-helper" target="_blank" rel="noopener noreferrer">
+            View on GitHub
+          </a>
+        </footer>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -4,10 +4,9 @@ html {
   padding: 0;
   height: 100%;
   overflow-x: hidden;
-  background-image: url("/america-background.webp"); /* Add your .webp file here */
-  background-size: cover; /* Ensures the background covers the entire container */
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: #e9ecef; /* Darker background for better contrast */
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #333;
 }
 
 #root {
@@ -17,17 +16,57 @@ html {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+.content {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow for more depth */
+  width: 100%;
+  max-width: 700px;
+  padding: 2rem;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+header {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+  color: #1a365d; /* Darker blue for better contrast */
+}
+
+.subtitle {
+  color: #4a5568; /* Darker subtitle for better readability */
+  margin: 0;
+}
+
+.card {
+  padding: 1.5rem 0;
+}
+
+footer {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #cbd5e0; /* Darker border for better visibility */
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #2b6cb0; /* Darker link color for better contrast */
+  text-decoration: none;
+  transition: color 0.2s;
+  font-weight: 500; /* Added weight to links */
+}
+
+footer a:hover {
+  color: #1a4a8d; /* Darker hover state */
+  text-decoration: underline;
 }
 
 @keyframes logo-spin {
@@ -39,51 +78,9 @@ html {
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.sidebar {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 100px; /* Adjust as necessary */
-  background-size: contain;
-  background-repeat: repeat-y;
-  z-index: 1;
-}
-
-.sidebar.left {
-  left: 0;
-  background-image: url("/carlos.jpg");
-}
-
-.sidebar.right {
-  right: 0;
-  background-image: url("/carlos.jpg");
-}
-
-#carlos-head {
-  width: 150px; /* Set the width to make it a square */
-  height: 150px; /* Set the height to make it a square */
-  border-radius: 50%; /* Make it a circular shape */
-  animation: rotate 5s linear infinite; /* Apply the rotation animation */
-  display: block;
-  margin: 20px auto; /* Center the image horizontally */
-}
-
-/* Keyframes for rotating animation */
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width: 768px) {
+  .content {
+    margin: 0 1rem;
+    padding: 1.5rem;
   }
 }

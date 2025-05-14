@@ -1,56 +1,129 @@
 /* FontHelper.css */
 
 .font-helper-container {
-  max-width: 600px;
-  margin: 50px auto;
+  max-width: 100%;
+  margin: 0 auto;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-image: url("/murica.webp");
+  border-radius: 8px;
+  background-color: #edf2f7; /* Darker background for better contrast */
+  border: 1px solid #cbd5e0; /* Darker border for better visibility */
 }
 
-.input-container {
+.input-container, .font-selector-container {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
 
 .input-label {
-  font-weight: bold;
-  margin-bottom: 5px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-align: left;
+  color: #2d3748; /* Darker text for better readability */
+  font-size: 0.95rem;
 }
 
 .text-input {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 12px;
+  border: 1px solid #cbd5e0; /* Darker border */
+  border-radius: 6px;
   font-size: 16px;
-  transition: border-color 0.3s ease;
+  transition: all 0.2s ease;
+  background-color: white;
 }
 
 .text-input:focus {
   outline: none;
-  border-color: #007acc;
-  box-shadow: 0 0 5px rgba(0, 122, 204, 0.5);
+  border-color: #2b6cb0; /* Darker blue for better visibility */
+  box-shadow: 0 0 0 2px rgba(43, 108, 176, 0.2); /* Adjusted shadow color */
+}
+
+.font-selector {
+  padding: 12px;
+  border: 1px solid #cbd5e0; /* Darker border */
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.font-selector:focus {
+  outline: none;
+  border-color: #2b6cb0; /* Darker blue */
+  box-shadow: 0 0 0 2px rgba(43, 108, 176, 0.2); /* Adjusted shadow color */
+}
+
+.component-description {
+  font-size: 0.9rem;
+  color: #4a5568; /* Darker text */
+  margin: 20px 0;
+  text-align: left;
+  line-height: 1.5;
 }
 
 .output-container {
   display: flex;
   flex-direction: column;
+  background-color: white;
+  border: 1px solid #cbd5e0; /* Darker border */
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Added subtle shadow */
+}
+
+.output-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e2e8f0; /* Darker header background */
+  padding: 12px 15px;
+  border-bottom: 1px solid #cbd5e0; /* Darker border */
 }
 
 .output-label {
-  font-weight: bold;
-  margin-bottom: 5px;
+  font-weight: 600;
+  color: #2d3748; /* Darker text */
+}
+
+.font-label {
+  font-size: 0.9rem;
+  color: #4a5568; /* Darker text */
+  font-style: italic;
 }
 
 .output-box {
+  padding: 20px 15px;
+  min-height: 60px;
+  font-size: 18px;
+  color: #1a202c; /* Darker text */
+  text-align: left;
+  border-bottom: 1px solid #edf2f7; /* Added subtle separator */
+}
+
+.sample-characters {
   padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-family: "Consolas", monospace;
-  background-color: #fff;
-  min-height: 50px;
-  font-size: 16px;
-  color: #333;
+  border-top: 1px solid #e2e8f0;
+  background-color: #edf2f7; /* Darker background */
+}
+
+.character-set {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.char-label {
+  font-size: 1.5rem;
+  color: #2d3748; /* Darker text */
+}
+
+.char-spacer {
+  font-size: 1.5rem;
+  color: #a0aec0; /* Darker divider */
+}
+
+@media (max-width: 768px) {
+  .font-helper-container {
+    padding: 15px;
+  }
 }
