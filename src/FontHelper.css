@@ -30,6 +30,9 @@
   font-size: 16px;
   transition: all 0.2s ease;
   background-color: white;
+  -webkit-appearance: none; /* Fixes rendering on iOS */
+  appearance: none;
+  color: #000; /* Explicit text color for iOS */
 }
 
 .text-input:focus {
@@ -45,6 +48,9 @@
   font-size: 16px;
   background-color: white;
   cursor: pointer;
+  -webkit-appearance: none; /* Fixes rendering on iOS */
+  appearance: none;
+  color: #000; /* Explicit text color for iOS */
 }
 
 .font-selector:focus {
@@ -125,5 +131,23 @@
 @media (max-width: 768px) {
   .font-helper-container {
     padding: 15px;
+  }
+  
+  /* iOS specific fixes */
+  .text-input, .font-selector {
+    font-size: 16px; /* Prevents zoom on iOS */
+    padding: 12px 8px;
+  }
+  
+  /* Fix for iOS Safari text color */
+  input[type="text"] {
+    opacity: 1;
+    -webkit-text-fill-color: #000;
+  }
+  
+  /* Fix for iOS Safari select box */
+  select {
+    background-image: none;
+    padding-right: 24px;
   }
 }

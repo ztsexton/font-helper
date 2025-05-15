@@ -30,6 +30,10 @@ function FontHelper() {
           onChange={(e) => setInput(e.target.value)}
           placeholder="Type something here to test (e.g. Il1O0)"
           className="text-input"
+          autoComplete="off"
+          autoCorrect="off"
+          autoCapitalize="none"
+          spellCheck="false"
         />
       </div>
       
